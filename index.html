@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>LRU Page Replacement</title>
+</head>
+<body>
+  <div class="container">
+    <h1>LRU Page Replacement Simulation</h1>
+    <form id="lru-form">
+      <label for="num-pages">Number of Pages:</label>
+      <input type="number" id="num-pages" min="1" required>
+
+      <label for="reference-string">Reference String (comma-separated):</label>
+      <input type="text" id="reference-string" placeholder="e.g., 7, 0, 1, 2, 0, 3, 0, 4" required>
+
+      <label for="num-frames">Number of Frames:</label>
+      <input type="number" id="num-frames" min="1" required>
+
+      <button type="submit">Simulate</button>
+    </form>
+    <div id="output">
+      <h2>Simulation Output</h2>
+      <!-- Table for tabular output -->
+      <div id="page-replacement-table"></div>
+      <!-- Visualization of frames -->
+      <div id="page-replacement-visual"></div>
+      <p id="page-faults"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
